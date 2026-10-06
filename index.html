@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#fff4f6">
+  <title>Một món quà nhỏ dành cho bạn 🎁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="particles" id="particles" aria-hidden="true"></div>
+
+  <main>
+    <!-- 01. COVER -->
+    <section class="screen cover" id="cover">
+      <div class="cover-content">
+        <div class="mini-label">A LITTLE GIFT FOR YOU</div>
+
+        <div class="gift" id="gift" role="button" tabindex="0" aria-label="Mở món quà">
+          <div class="gift-lid">
+            <span class="bow bow-left"></span>
+            <span class="bow bow-right"></span>
+            <span class="bow-center"></span>
+          </div>
+          <div class="gift-box">
+            <span class="ribbon vertical"></span>
+            <span class="ribbon horizontal"></span>
+          </div>
+          <div class="gift-shadow"></div>
+        </div>
+
+        <h1>Mình có một món quà<br><em>nhỏ dành cho bạn.</em></h1>
+        <p class="cover-sub">Không cần vội. Hãy mở nó khi bạn sẵn sàng. ♡</p>
+        <button class="pill-btn" id="openGift">Mở quà <span>→</span></button>
+      </div>
+      <div class="scroll-hint">SCROLL TO DISCOVER</div>
+    </section>
+
+    <!-- 02. LETTER -->
+    <section class="screen letter-section">
+      <div class="paper">
+        <div class="paper-top">♡</div>
+        <div class="mini-label">A LETTER FOR YOU</div>
+        <h2>Gửi bạn,</h2>
+        <div class="letter-text">
+          <p>Có những điều đôi khi mình không biết phải nói thế nào cho thật hay.</p>
+          <p>Nên mình chọn cách viết chúng ra, chậm một chút, để bạn có thể đọc và cảm nhận.</p>
+          <p>Mình chỉ mong rằng khi nhìn thấy món quà nhỏ này, bạn sẽ mỉm cười.</p>
+        </div>
+        <div class="line"></div>
+        <p class="handwrite">Mong bạn luôn thật vui và hạnh phúc. ♡</p>
+      </div>
+    </section>
+
+    <!-- 03. WISHES -->
+    <section class="screen wishes-section">
+      <div class="section-heading">
+        <div class="mini-label">A FEW WISHES</div>
+        <h2>Những điều mình<br><em>muốn gửi đến bạn</em></h2>
+      </div>
+
+      <div class="wish-grid">
+        <article class="wish-card">
+          <div class="wish-number">01</div>
+          <div class="wish-icon">☀️</div>
+          <h3>Luôn có lý do để cười</h3>
+          <p>Mong mỗi ngày của bạn đều có ít nhất một điều khiến bạn thấy vui.</p>
+        </article>
+        <article class="wish-card">
+          <div class="wish-number">02</div>
+          <div class="wish-icon">🌷</div>
+          <h3>Luôn được yêu thương</h3>
+          <p>Mong bạn luôn gặp những người chân thành và những điều tử tế.</p>
+        </article>
+        <article class="wish-card">
+          <div class="wish-number">03</div>
+          <div class="wish-icon">✨</div>
+          <h3>Luôn là chính mình</h3>
+          <p>Dù cuộc sống có thay đổi thế nào, mong bạn vẫn giữ được điều đặc biệt của riêng mình.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04. PHOTO -->
+    <section class="screen photo-section">
+      <div class="photo-frame">
+        <div class="photo-placeholder">
+          <span>📷</span>
+          <p>Đặt ảnh của bạn vào<br><strong>assets/photo.jpg</strong></p>
+        </div>
+        <img id="photo" src="assets/photo.jpg" alt="Kỷ niệm" onerror="this.style.display='none'">
+        <div class="photo-caption">Một khoảnh khắc mình muốn lưu lại. ♡</div>
+      </div>
+    </section>
+
+    <!-- 05. VIDEO -->
+    <section class="screen video-section">
+      <div class="section-heading">
+        <div class="mini-label">ONE MORE THING</div>
+        <h2>Mình còn muốn<br><em>bạn xem cái này.</em></h2>
+      </div>
+
+      <div class="video-wrap">
+        <video id="video" controls playsinline preload="metadata">
+          <source src="assets/video.mp4" type="video/mp4">
+        </video>
+        <div class="video-placeholder" id="videoPlaceholder">
+          <div class="play-icon">▶</div>
+          <p>Đặt video của bạn vào<br><strong>assets/video.mp4</strong></p>
+        </div>
+      </div>
+      <p class="video-note">Bật âm thanh nếu bạn muốn nghe trọn vẹn nhé. ♫</p>
+    </section>
+
+    <!-- 06. FINAL -->
+    <section class="screen final-section">
+      <div class="final-glow"></div>
+      <div class="final-content">
+        <div class="mini-label">ONE LAST MESSAGE</div>
+        <div class="big-heart">♥</div>
+        <h2>Cảm ơn bạn<br><em>đã xuất hiện.</em></h2>
+        <p>
+          Món quà này có thể không lớn,<br>
+          nhưng những điều mình gửi trong đó<br>
+          đều là thật lòng.
+        </p>
+        <div class="signature">— Từ mình, gửi đến bạn</div>
+        <button class="pill-btn outline" id="backTop">Xem lại từ đầu ↑</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Made with love · just for you ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
